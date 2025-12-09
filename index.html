@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head><style>
+<head>
+<style>
+
 /* 整体黑底白字 */
 body {
     background-color: #000;
     color: #fff;
     font-family: Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
-    position: relative;
+    padding: 20px;
 }
 
 /* 标题颜色 */
@@ -16,26 +17,17 @@ h1, h2, h3 {
     color: #fff;
 }
 
-/* 雨滴背景 */
-.rain {
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://i.imgur.com/1a7OqB9.png');
-    animation: rainMove 0.5s linear infinite;
-    opacity: 0.25;
-    z-index: -1;
+/* 段落行距 */
+p {
+    line-height: 1.6;
 }
 
-/* 背景动画 */
-@keyframes rainMove {
-    from { background-position: 0 0; }
-    to { background-position: 0 50px; }
-}
 </style>
+
+<title>The Meowfia</title>
+</head>
+
+
   <title>The Meowfia</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -43,27 +35,7 @@ h1, h2, h3 {
 
 <meta charset="utf-8">
 <body>
-<div class="rain"></div>
-	<style>
-/* Rain Background */
-.rain {
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://i.imgur.com/1a7OqB9.png') repeat;
-    animation: rain 0.3s linear infinite;
-    opacity: 0.25;
-    z-index: -1;
-}
 
-@keyframes rain {
-    from { background-position: 0 0; }
-    to   { background-position: 0 50px; }
-}
-	</style>
   <h1>🐾 Trouble Kittens – Simple Introduction</h1>
   <p><p>We are Trouble Kittens, a small team of two special cats.</p>
 
