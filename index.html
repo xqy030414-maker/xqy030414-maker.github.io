@@ -24,7 +24,7 @@ h1, h2, h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://i.imgur.com/qV7W4Ih.png');
+    background: url('https://i.imgur.com/1a7OqB9.png');
     animation: rainMove 0.5s linear infinite;
     opacity: 0.25;
     z-index: -1;
@@ -45,25 +45,24 @@ h1, h2, h3 {
 <body>
 <div class="rain"></div>
 	<style>
-	/* 雨滴背景 */
-	.rain {
-	    pointer-events: none;  
-	    position: fixed;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    background: url('https://i.imgur.com/qV7W4Ih.png');
-	    animation: rain 0.3s linear infinite;
-	    opacity: 0.25; 
-	    z-index: -1;  
-	}
+/* Rain Background */
+.rain {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.imgur.com/1a7OqB9.png') repeat;
+    animation: rain 0.3s linear infinite;
+    opacity: 0.25;
+    z-index: -1;
+}
 
-	
-	@keyframes rain {
-	    from { background-position: 0 0; }
-	    to { background-position: 0 50px; }
-	}
+@keyframes rain {
+    from { background-position: 0 0; }
+    to   { background-position: 0 50px; }
+}
 	</style>
   <h1>🐾 Trouble Kittens – Simple Introduction</h1>
   <p><p>We are Trouble Kittens, a small team of two special cats.</p>
