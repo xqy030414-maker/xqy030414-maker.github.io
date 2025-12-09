@@ -1,109 +1,358 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>The Meowfia</title>
+  <meta charset="utf-8">
+  <title>The Meowfia</title>
 
-<style>
-/* 整体黑底白字 */
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: Helvetica, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
+  <style>
+    /* 整体黑底白字 */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
 
-/* 标题颜色 */
-h1, h2, h3 {
-    color: #fff;
-}
+    /* 标题颜色 */
+    h1,
+    h2,
+    h3 {
+      color: #fff;
+    }
 
-/* 段落间距 */
-p {
-    line-height: 1.6;
-}
-.content {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-</style>
+    /* 段落间距 */
+    p {
+      line-height: 1.6;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; /* 放在内容后面 */
+      height: 100%;
+    }
+  </style>
 
 </head>
 
 <body>
+  <!-- 雨点 Canvas（放最顶或最底都行）-->
+  <canvas id="rain-canvas"></canvas>
+  <h1>🐾 Trouble Kittens – Simple
+    Introduction</h1>
+  <p>
+  <p>We are Trouble Kittens, a small
+    team of two special cats.</p>
 
-  <h1>🐾 Trouble Kittens – Simple Introduction</h1>
-  <p><p>We are Trouble Kittens, a small team of two special cats.</p>
+  <p>Silver is elegant, fast, and very
+    agile.</p>
 
-<p>Silver is elegant, fast, and very agile.</p>
+  <p>Black is a mysterious night cat who
+    can disappear in the dark.</p>
 
-<p>Black is a mysterious night cat who can disappear in the dark.</p>
-
-<p>Together, we play, explore, and cause a little trouble every day.</p>
-
-<p>We are cute, curious, and always ready for a new adventure.</p>
-  <audio src="Shape-of-My-Heart.mp3 " controls></audio>
+  <p>Together, we play, explore, and
+    cause a little trouble every day.
   </p>
-<h1>The Meowfia</h1>
-<img src="cat.png" alt="CATFIA">
-<h3>Agent File: BLACK</h3>
-<p><b>Codename:</b> Mafia</p>
-<p><b>Role:</b> Infiltration Specialist / Behavioral Consultant</p>
-<p><b>Status:</b> Active</p>
 
-<p>
-Agent Black has a sleek tuxedo coat and a cold, mysterious look that lets him melt into the shadows.
-He excels in stealth missions, night patrols, and silent takedowns. Despite his deadly skillset,
-Black is surprisingly gentle with his team and often acts as their emotional support cat.
-</p>
+  <p>We are cute, curious, and always
+    ready for a new adventure.</p>
+  <audio
+    src="Shape-of-My-Heart.mp3 "
+    controls
+    autoplay
+  ></audio>
+  </p>
+  <h1>The Meowfia</h1>
+  <img
+    src="cat.png"
+    alt="CATFIA"
+  >
+  <h3>Agent File: BLACK</h3>
+  <h3>Agent File: BLACK</h3>
+  <p><b>Codename:</b> Mafia</p>
+  <p><b>Role:</b> Infiltration
+    Specialist / Behavioral Consultant
+  </p>
+  <p><b>Status:</b> Active</p>
 
-<p>
-<b>Skills:</b> Stealth, Sneak Attack, Surveillance<br>
+  <p>
+    Agent Black has a sleek tuxedo coat
+    and a cold, mysterious look that
+    lets him melt into the shadows.
+    He excels in stealth missions, night
+    patrols, and silent takedowns.
+    Despite his deadly skillset,
+    Black is surprisingly gentle with
+    his team and often acts as their
+    emotional support cat.
+  </p>
 
-<b>Traits:</b> Quiet but expressive; cold on the outside but warm to trusted friends
-</p>
+  <p>
+    <b>Skills:</b> Stealth, Sneak
+    Attack, Surveillance<br>
+    <b>Traits:</b> Quiet but expressive;
+    cold on the outside but warm to
+    trusted friends
+  </p>
 
-<img src="black.jpg" alt="Mafia the cat" style="width:250px; border-radius:12px;">
+  <img
+    src="black.jpg"
+    alt="Mafia the cat"
+    style="width:250px; border-radius:12px;"
+  >
+  <img
+    src="black.jpg"
+    alt="Mafia the cat"
+    style="width:250px; border-radius:12px;"
+  >
 
-   <h3>Agent File: SILVER</h3>
-   <p><b>Codename:</b> Silver</p>
-   <p><b>Role:</b> Public-Operations Specialist / Close-Combat Instructor</p>
-   <p><b>Status:</b> Active</p>
+  <h3>Agent File: SILVER</h3>
+  <p><b>Codename:</b> Silver</p>
+  <p><b>Role:</b> Public-Operations
+    Specialist / Close-Combat Instructor
+  </p>
+  <p><b>Status:</b> Active</p>
 
-   <p>
-   Agent Silver is a stylish spotted cat with bright blue eyes and the confidence of a superstar.
-   He’s outgoing, clever, and unbelievably quick on his paws. Trained at the famous Cat Point Military Academy,
-   Silver handles missions that require agility, precision, and sharp instincts. He also teaches close-combat
-   techniques to other operatives.
-   </p>
+  <p>
+    Agent Silver is a stylish spotted
+    cat with bright blue eyes and the
+    confidence of a superstar.
+    He’s outgoing, clever, and
+    unbelievably quick on his paws.
+    Trained at the famous Cat Point
+    Military Academy,
+    Silver handles missions that require
+    agility, precision, and sharp
+    instincts. He also teaches
+    close-combat
+    techniques to other operatives.
+  </p>
 
-   <p>
-   <b>Skills:</b> Lockpicking, Assault, Quick Strikes, Close-Quarters Combat<br>
-   
-   <b>Traits:</b> Slight clean-freak; loves any meal that involves fish; secretly enjoys attention
-   </p>
+  <p>
+    <b>Skills:</b> Lockpicking, Assault,
+    Quick Strikes, Close-Quarters
+    Combat<br>
+    <b>Traits:</b> Slight clean-freak;
+    loves any meal that involves fish;
+    secretly enjoys attention
+  </p>
 
-   <img src="Silver.jpg" alt="Silver the cat" style="width:250px; border-radius:12px;">
-   
-	  <h2>Join the Meowfia</h2>
+  <img
+    src="Silver.jpg"
+    alt="Silver the cat"
+    style="width:250px; border-radius:12px;"
+  >
 
-	  <p>
-	  As the legendary leaders of the Meowfia, Silver and Mafia continue to expand their influence 
-	  across all corners of the feline world. But even the strongest duo needs a loyal and talented crew.
-	  </p>
+  <h2>Join the Meowfia</h2>
 
-	  <p>
-	  We are always looking for skilled, ambitious, and sharp-minded cats to join our family. 
-	  Whether you specialize in stealth, negotiation, combat, surveillance, or simply possess an 
-	  exceptional ability to knock things off tables with style—there is a place for you here.
-	  </p>
+  <p>
+    As the legendary leaders of the
+    Meowfia, Silver and Mafia continue
+    to expand their influence
+    across all corners of the feline
+    world. But even the strongest duo
+    needs a loyal and talented crew.
+  </p>
 
-	  <p>
-	  If you dream of power, teamwork, purpose, and unlimited fish snacks, then the Meowfia 
-	  welcomes you with open paws. Step forward, future agent. Your destiny awaits.
-	  </p>
+  <p>
+    We are always looking for skilled,
+    ambitious, and sharp-minded cats to
+    join our family.
+    Whether you specialize in stealth,
+    negotiation, combat, surveillance,
+    or simply possess an
+    exceptional ability to knock things
+    off tables with style—there is a
+    place for you here.
+  </p>
+
+  <p>
+    If you dream of power, teamwork,
+    purpose, and unlimited fish snacks,
+    then the Meowfia
+    welcomes you with open paws. Step
+    forward, future agent. Your destiny
+    awaits.
+  </p>
+
+  </div>
+
+  <!-- 脚本：改为使用 document height，并在 scroll/resize 时同步 -->
+<script>
+(function () {
+  const canvas = document.getElementById('rain-canvas');
+  const ctx = canvas.getContext('2d');
+
+  let cssWidth = 0;      // CSS 像素宽
+  let docHeight = 0;     // 文档总高度（CSS 像素）
+  let dpr = Math.max(1, window.devicePixelRatio || 1);
+  let drops = [];
+  const dropCount = 220; // 可按需调整
+
+  // 创建单个雨滴
+  function createDrop(i) {
+    const x = Math.random() * cssWidth;
+    const lenBase = 8 + Math.random() * 20;
+    return {
+      x: x,
+      y: Math.random() * -docHeight,  // 在文档高度范围内随机
+      z: Math.random() * 0.8 + 0.2,
+      len: lenBase,
+      vx: (Math.random() - 0.5) * 0.6,
+      vy: 4 + Math.random() * 10,
+      alpha: 0.2 + Math.random() * 0.8,
+      width: (Math.random() * 1.2) + 0.4,
+      splash: 0,
+      idx: i
+    };
+  }
+
+  function initDrops() {
+    drops = [];
+    for (let i = 0; i < dropCount; i++) {
+      drops.push(createDrop(i));
+    }
+  }
+
+  // 更新 canvas 尺寸（使用文档高度）
+  function updateCanvasSize() {
+    dpr = Math.max(1, window.devicePixelRatio || 1);
+    cssWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    // 文档总高度（包含可滚动的部分）
+    docHeight = Math.max(
+      document.documentElement.scrollHeight,
+      document.body.scrollHeight,
+      document.documentElement.clientHeight
+    );
+
+    // 设置 canvas 的 CSS 高度为文档高度
+    canvas.style.width = cssWidth + 'px';
+    canvas.style.height = docHeight + 'px';
+
+    // 设置画布内部像素尺寸
+    canvas.width = Math.round(cssWidth * dpr);
+    canvas.height = Math.round(docHeight * dpr);
+
+    // 因为 canvas 像素尺寸变了，重设缩放
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function drawDrop(drop) {
+    ctx.beginPath();
+    const a = Math.min(1, drop.alpha * (1 + (0.6 - drop.z)));
+    ctx.strokeStyle = `rgba(255,255,255,${a})`;
+    ctx.lineWidth = drop.width * (1 + (1 - drop.z));
+    // 注意：我们直接以 drop.x, drop.y（相对于文档顶部）绘制
+    ctx.moveTo(drop.x, drop.y);
+    ctx.lineTo(drop.x + drop.vx * 2, drop.y + drop.len);
+    ctx.stroke();
+
+    if (drop.splash > 0) {
+      const s = drop.splash;
+      const maxS = 18 * (1 - drop.z) + 6;
+      ctx.beginPath();
+      // 溅射固定画在页面底部（docHeight - 2），比较自然
+      const splashY = Math.min(docHeight - 2, drop.y);
+      ctx.arc(drop.x, splashY, Math.min(maxS, s), 0, Math.PI * 2);
+      ctx.strokeStyle = `rgba(255,255,255,${0.08 * (1 - drop.z + 0.5)})`;
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+  }
+
+  // 更新雨滴状态
+  function update(dt) {
+    for (let i = 0; i < drops.length; i++) {
+      const d = drops[i];
+      const gravity = (d.vy + d.z * 10) * dt * 60;
+      d.y += gravity;
+      d.x += d.vx * dt * 60;
+
+      // 到达页面底部或超出文档高度
+      if (d.y > docHeight - 4) {
+        if (d.splash <= 0) d.splash = 1;
+        else d.splash += (dt * 60) * 2;
+        if (d.splash > 8 + (1 - d.z) * 20) {
+          drops[i] = createDrop(d.idx);
+          drops[i].y = Math.random() * -60;
+        }
+      }
+
+      // 横向移出文档宽度则重置
+      if (d.x < -20 || d.x > cssWidth + 20) {
+        drops[i] = createDrop(d.idx);
+        drops[i].y = Math.random() * -100;
+      }
+    }
+  }
+
+  let lastTime = performance.now();
+  function loop(now) {
+    const dt = Math.min(0.05, (now - lastTime) / 1000);
+    lastTime = now;
+
+    // 清除整张 canvas（因为 canvas 覆盖整个文档）
+    ctx.clearRect(0, 0, cssWidth, docHeight);
+
+    // 仅绘制当前可见区域的雨滴可以提高性能（可选）
+    // 我们依然绘制所有，但你也可以根据 window.scrollY 做裁剪优化
+    for (let i = 0; i < drops.length; i++) {
+      drawDrop(drops[i]);
+    }
+
+    update(dt);
+    requestAnimationFrame(loop);
+  }
+
+  // 当文档高度变化（resize 或 内容变更或滚动）时同步 canvas
+  function onResizeOrContentChange() {
+    const oldDocHeight = docHeight;
+    updateCanvasSize();
+    // 如果文档高度增长或缩小，为了保证雨滴仍在合理范围，尽量保持现有 drop 的 x 范围合法
+    for (let i = 0; i < drops.length; i++) {
+      if (drops[i].x > cssWidth) drops[i].x = Math.random() * cssWidth;
+      if (drops[i].y > docHeight) drops[i].y = Math.random() * -200;
+    }
+  }
+
+  // 监听 resize、scroll（scroll 可能改变文档高度/布局）与 DOM 变化（比如图片加载改变高度）
+  window.addEventListener('resize', onResizeOrContentChange);
+  window.addEventListener('scroll', function () {
+    // 当页面滚动时，canvas 是随文档滚动的，不需要移动 canvas 本身
+    // 但一些情况下文档高度会在 scroll 后变化（lazy load），我们再次检查并调整
+    const newDocHeight = Math.max(
+      document.documentElement.scrollHeight,
+      document.body.scrollHeight,
+      document.documentElement.clientHeight
+    );
+    if (newDocHeight !== docHeight) onResizeOrContentChange();
+  });
+
+  // 使用 MutationObserver 监听 DOM 高度变化（图片加载或动态内容）
+  const mo = new MutationObserver(function () {
+    const newDocHeight = Math.max(
+      document.documentElement.scrollHeight,
+      document.body.scrollHeight,
+      document.documentElement.clientHeight
+    );
+    if (newDocHeight !== docHeight) onResizeOrContentChange();
+  });
+  mo.observe(document.body, { childList: true, subtree: true, attributes: false });
+
+  // 初始化并开始
+  function start() {
+    updateCanvasSize();
+    initDrops();
+    lastTime = performance.now();
+    requestAnimationFrame(loop);
+  }
+
+  start();
+})();
+</script>
+
+</body>
+
+</html>
